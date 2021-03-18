@@ -1,3 +1,5 @@
+// com.candidate.doupin 抖聘 5.1
+
 function showStacks(){
     var stack = Java.use("android.util.Log").getStackTraceString(Java.use("java.lang.Exception").$new());
     // var stack = Java.use("android.util.Log").getStackTraceString(Java.use("java.lang.Throwable").$new());
@@ -57,18 +59,18 @@ Java.perform(function(){
 
 
     //非静态字段的修改
-    Java.choose("com.candidate.doupin.api.interceptor.JobRequestBodyInterceptor", {
-        onMatch: function(obj){
-            // var timeStamp = new Date().getTime();
-            var retval = obj.generateSign(1615972864685);
-            console.log('retval : ', retval);
-        },
-        onComplete: function(){}
-    });
+//     Java.choose("com.candidate.doupin.api.interceptor.JobRequestBodyInterceptor", {
+//         onMatch: function(obj){
+//             // var timeStamp = new Date().getTime();
+//             var retval = obj.generateSign(1615972864685);
+//             console.log('retval : ', retval);
+//         },
+//         onComplete: function(){}
+//     });
 
-    console.log('Success！');
+//     console.log('Success！');
 
-});
+//     });
 
 //Hook类的所有方法
 // Java.perform(function(){
