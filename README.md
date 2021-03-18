@@ -11,3 +11,5 @@
 6、美丽修行app signature + 模拟登陆
 
 7、马蜂窝app sign
+
+8、搜狐汽车app sign
