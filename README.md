@@ -9,3 +9,5 @@
 5、用药助手app 返回内容结果aes解密
 
 6、美丽修行app signature + 模拟登陆
+
+7、马蜂窝app sign
