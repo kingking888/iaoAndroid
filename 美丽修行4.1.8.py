@@ -59,7 +59,7 @@ def mlxx_login():
         'opentime': '1604411738',
         'req_timestamp': '1604411757835',
         'tel': '86',
-        'account': '13788995576',
+        'account': '手机号',
         'password': '123456',
         # 'signature': 'a12bd331d306781994d6ab2eb78580cd',
     }
@@ -88,7 +88,7 @@ channel	taobao
 opentime	1604402733
 req_timestamp	1604403501090
 tel	86
-account	13788995576
+account	手机号
 password	123456
 signature	eb79ab78c65e9e21239cedc568e80e79
 
