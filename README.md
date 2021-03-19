@@ -20,6 +20,8 @@
 
 8、马蜂窝app sign
 
+9、美图秀秀app sig sigTime sigVersion
+
 .
 
 .
