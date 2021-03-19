@@ -1,3 +1,5 @@
+// 美图秀秀app version 9.1.3.0
+
 function showStacks(){
     var stack = Java.use("android.util.Log").getStackTraceString(Java.use("java.lang.Exception").$new());
     // var stack = Java.use("android.util.Log").getStackTraceString(Java.use("java.lang.Throwable").$new());
