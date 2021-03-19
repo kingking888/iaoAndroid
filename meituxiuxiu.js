@@ -23,37 +23,6 @@ function hook_java(){
         console.log("结果 SigEntity.sigVersion : ", signResult.sigVersion.value)
 
 
-
-        var helloAddr = Module.findExportByName("librelease_sig.so", "_ZN7_JNIEnv12NewStringUTFEPKc");
-        console.log(helloAddr);
-        // if(helloAddr != null){
-        //     Interceptor.attach(helloAddr,{
-        //         onEnter: function(args){
-        //             //console.log(args[0]);
-        //             //console.log(args[1]);
-        //             console.log(args[2]);
-        //             //console.log(this.context.x2);
-        //             //console.log(args[3]);
-        //             //console.log(args[4].toInt32());
-        //         },
-        //         onLeave: function(retval){
-        //             //console.log(retval);
-        //             //console.log("retval", retval.toInt32());
-        //         }
-        //     });
-        // }
-
-
-
-
-
-
-
-
-
-
-
-
         // SigEntity.nativeGeneratorSig.overload('java.lang.String', '[[B', 'java.lang.String', 'java.lang.Object').implementation = function(arg1, arg2, arg3, arg4){
         //     console.log("参数 SigEntity arg1 : ", arg1)
         //     console.log("参数 SigEntity arg2 : ", arg2)
@@ -76,74 +45,6 @@ function hook_java(){
         //     console.log("结果 SigEntity.sigTime : ", signResult.sigTime.value)
         //     console.log("结果 SigEntity.sigVersion : ", signResult.sigVersion.value)
         //     return signResult;
-        // };
-
-
-        
-        // var Map = Java.use('java.util.Map');
-        // Map.put.implementation = function(a, b){
-        //     if(a == 'sig'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-        //     if(a == 'sigTime'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-        //     if(a == 'sigVersion'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-        //     if(a == 'client_timestamp'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-    
-        //     return this.put(a, b);
-        // };
-    
-        // var HashMap = Java.use('java.util.HashMap');
-        // HashMap.put.implementation = function(a, b){
-        //     if(a == 'sig'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-        //     if(a == 'sigTime'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-        //     if(a == 'sigVersion'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-        //     if(a == 'client_timestamp'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-    
-        //     return this.put(a, b);
-        // };
-
-        // var ConcurrentHashMap = Java.use('java.util.concurrent.ConcurrentHashMap');
-        // ConcurrentHashMap.put.implementation = function(a, b){
-        //     if(a == 'sig'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-        //     if(a == 'sigTime'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-        //     if(a == 'sigVersion'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-        //     if(a == 'client_timestamp'){
-        //         showStacks();
-        //         console.log(a, b);
-        //     };
-    
-        //     return this.put(a, b);
         // };
     
     })
