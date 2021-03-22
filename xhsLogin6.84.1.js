@@ -1,3 +1,5 @@
+// 小红书app 6.84.1 login
+
 function showStacks(){
     var stack = Java.use("android.util.Log").getStackTraceString(Java.use("java.lang.Exception").$new());
     // var stack = Java.use("android.util.Log").getStackTraceString(Java.use("java.lang.Throwable").$new());
@@ -56,36 +58,6 @@ function hook_java(){
 
         // var imei_encrypted = q0.a(c2, b);    // MZoDOEv3BQICR9j9W/bPTA==
         // console.log("imei_encrypted : ", imei_encrypted);
-
-
-
-        
-        var Map = Java.use('java.util.Map');
-        Map.put.implementation = function(a, b){
-            if(a == 'x-b3-traceid'){
-                showStacks();
-                console.log(a, b);
-            };
-            return this.put(a, b);
-        };
-    
-        var HashMap = Java.use('java.util.HashMap');
-        HashMap.put.implementation = function(a, b){
-            if(a == 'x-b3-traceid'){
-                showStacks();
-                console.log(a, b);
-            };
-            return this.put(a, b);
-        };
-
-        var ConcurrentHashMap = Java.use('java.util.concurrent.ConcurrentHashMap');
-        ConcurrentHashMap.put.implementation = function(a, b){
-            if(a == 'x-b3-traceid'){
-                showStacks();
-                console.log(a, b);
-            };
-            return this.put(a, b);
-        };
     
     })
 }
