@@ -58,37 +58,7 @@ Java.perform(function(){
     // }
 
 
-    //非静态字段的修改
-//     Java.choose("com.candidate.doupin.api.interceptor.JobRequestBodyInterceptor", {
-//         onMatch: function(obj){
-//             // var timeStamp = new Date().getTime();
-//             var retval = obj.generateSign(1615972864685);
-//             console.log('retval : ', retval);
-//         },
-//         onComplete: function(){}
-//     });
-
 //     console.log('Success！');
 
 //     });
 
-//Hook类的所有方法
-// Java.perform(function(){
-//     var md5 = Java.use("com.candidate.doupin.api.interceptor.JobRequestBodyInterceptor");
-//     var methods = md5.class.getDeclaredMethods();
-//     for(var j = 0; j < methods.length; j++){
-//         var methodName = methods[j].getName();
-//         console.log(methodName);
-//         // hook methodNmae 这个类的所有方法（难点在于每个方法的参数是不同的）
-//         for(var k = 0; k < md5[methodName].overloads.length; k++){
-//             md5[methodName].overloads[k].implementation = function(){
-//                 // 这是 hook 逻辑
-//                 for(var i = 0; i < arguments.length; i++){
-//                     console.log(arguments[i]);
-//                 }
-//                 return this[methodName].apply(this, arguments);  // 重新调用
-//             }
-//         }
-
-//     }
-// });
